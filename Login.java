@@ -4,7 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 public class Login extends JFrame implements ActionListener {
-    JTextField tfusername,tfpassword;
+    JTextField tfusername;
+    JPasswordField tfpassword;
     Login(){
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
@@ -21,7 +22,7 @@ public class Login extends JFrame implements ActionListener {
         lblpassword.setBounds(40,70,100,30);
         add(lblpassword);
         
-        tfpassword=new JTextField();
+        tfpassword=new JPasswordField();
         tfpassword.setBounds(150,70,150,30);
         add(tfpassword);
                 
